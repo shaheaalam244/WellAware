@@ -1,45 +1,55 @@
-# .gitignore for WellAware Streamlit app
-# ============================
-# 🧠 Python & Streamlit Project
-# ============================
+# =======================================
+# 🌐 WELL AWARE AI HEALTHCARE APP IGNORE
+# =======================================
 
-# --- Environment & OS files ---
-.env
-*.env
+# --- Python environment ---
 .venv/
 venv/
 env/
+ENV/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.pdb
-.DS_Store
-Thumbs.db
 
-# --- Streamlit specific ---
-.streamlit/secrets.toml
-.streamlit/config.toml
-
-# --- Build & cache ---
+# --- Virtual environment files ---
+pip-wheel-metadata/
+*.egg-info/
 build/
 dist/
-*.egg-info/
-pip-wheel-metadata/
-*.spec
-.cache/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+.streamlit/config.toml
+.streamlit/cache/
+.streamlit/static/
+
+# --- Environment variables ---
+.env
+*.env
+
+# --- Model files ---
+models/*.pkl
+models/*.pickle
+*.pkl
+*.pickle
+
+# --- Logs and temporary files ---
+logs/
 *.log
+*.bak
+*.tmp
+*.swp
 
 # --- Data files ---
 *.csv
 *.tsv
-*.xls
 *.xlsx
+*.xls
 *.json
 *.db
 *.sqlite3
-*.pickle
-*.pkl
 
 # --- IDE & Editor settings ---
 .vscode/
@@ -47,21 +57,39 @@ pip-wheel-metadata/
 *.sublime-project
 *.sublime-workspace
 
-# --- Notebooks & checkpoints ---
-.ipynb_checkpoints/
+# --- OS specific junk ---
+.DS_Store
+Thumbs.db
 
-# --- System files ---
-*.bak
-*.swp
-*.tmp
+# --- Jupyter & checkpoints ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Audio cache (pyttsx3 or temp output) ---
+*.mp3
+*.wav
+
+# --- User uploads or temporary data ---
+uploads/
+temp/
+tmp/
+
+# --- Cache ---
+.cache/
+__pycache__/
+.pytest_cache/
+coverage/
 
 # --- Deployment ---
-# Ignore any Streamlit cloud logs or auto-generated files
-logs/
-streamlit_logs/
+*.spec
+*.lock
+*.tar.gz
 
-# --- Optional ---
-# Ignore testing or sandbox scripts
+# --- Optional: Ignore tests/sandbox code ---
 test_*.py
+tests/
 sandbox/
 scratch/
+
+# --- Streamlit Cloud logs ---
+.streamlit_logs/
