@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import pyttsx3
-from google import genai
+from google.generativeai import genai
 from google.genai import types
 
 # ===== Load Environment =====
