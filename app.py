@@ -4,7 +4,7 @@ import os
 import streamlit as st
 import pickle
 import numpy as np
-from google import genai
+import google.generativeai as genai
 from google.genai import types
 
 # -------------------------------
