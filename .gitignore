@@ -1,0 +1,67 @@
+# .gitignore for WellAware Streamlit app
+# ============================
+# 🧠 Python & Streamlit Project
+# ============================
+
+# --- Environment & OS files ---
+.env
+*.env
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+.DS_Store
+Thumbs.db
+
+# --- Streamlit specific ---
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# --- Build & cache ---
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+*.spec
+.cache/
+*.log
+
+# --- Data files ---
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.json
+*.db
+*.sqlite3
+*.pickle
+*.pkl
+
+# --- IDE & Editor settings ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Notebooks & checkpoints ---
+.ipynb_checkpoints/
+
+# --- System files ---
+*.bak
+*.swp
+*.tmp
+
+# --- Deployment ---
+# Ignore any Streamlit cloud logs or auto-generated files
+logs/
+streamlit_logs/
+
+# --- Optional ---
+# Ignore testing or sandbox scripts
+test_*.py
+sandbox/
+scratch/
