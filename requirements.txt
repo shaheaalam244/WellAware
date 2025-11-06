@@ -1,6 +1,5 @@
 streamlit
 numpy
-scikit-learn
+pandas
 pyttsx3
-google-generativeai
-python-dotenv
+google-genai
