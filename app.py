@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-import pyttsx3
+import pyttsx
 from google import genai
 from google.genai import types
 
