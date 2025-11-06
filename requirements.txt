@@ -3,3 +3,4 @@ numpy
 scikit-learn
 pyttsx3
 google-generativeai
+python-dotenv
