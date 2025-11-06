@@ -226,54 +226,16 @@ else:
                 f"<div class='result-box {color_class}'><h2>{msg}</h2><p>Probability: {prob:.2f}%</p></div>",
                 unsafe_allow_html=True
             )
+    with st.expander("❤️ Heart Disease Prediction"):
+        st.info("🚧 Coming Soon — This feature will be available in future updates.")
 
-    # ===== Heart Disease Prediction =====
-    # with st.expander("❤️ Heart Disease Prediction"):
-        # col1, col2, col3 = st.columns(3)
-        # with col1:
-        #     age = st.slider("Age", 20, 100, 40)
-        #     sex = st.selectbox("Sex", ("Male", "Female"))
-        #     cp = st.slider("Chest Pain Type (1-4)", 1, 4, 2)
-        # with col2:
-        #     trestbps = st.slider("Resting BP", 80, 200, 120)
-        #     chol = st.slider("Cholesterol", 100, 600, 200)
-        #     fbs = st.selectbox("Fasting Blood Sugar > 120 mg/dl", (0, 1))
-        # with col3:
-        #     restecg = st.slider("Resting ECG (0–2)", 0, 2, 1)
-        #     thalach = st.slider("Max Heart Rate", 70, 210, 150)
-        #     exang = st.selectbox("Exercise Induced Angina", (0, 1))
-        #
-        # col4, col5, col6 = st.columns(3)
-        # with col4:
-        #     oldpeak = st.slider("Oldpeak", 0.0, 6.0, 1.0)
-        # with col5:
-        #     slope = st.slider("Slope (0–2)", 0, 2, 1)
-        # with col6:
-        #     ca = st.slider("Major Vessels (0–3)", 0, 3, 0)
-        #
-        # thal = st.slider("Thalassemia (3,6,7)", 3, 7, 6)
-        #
-        # if st.button("🔍 Predict Heart Disease"):
-        #     heart_model, heart_scaler, acc, f1 = load_model("heart_model")
-        #     age_group = 0 if age <= 40 else (1 if age <= 60 else 2)
-        #     high_risk = int((chol > 240) and (trestbps > 140))
-        #     fitness = thalach / (220 - age)
-        #     input_data = [
-        #         age, 1 if sex == "Male" else 0, cp, trestbps, chol, fbs,
-        #         restecg, thalach, exang, oldpeak, slope, ca, thal,
-        #         age_group, high_risk, fitness
-        #     ]
-        #     result, prob = predict(heart_model, input_data, scaler=heart_scaler)
-        #     color_class = "positive" if result == 1 else "negative"
-        #     msg = "⚠️ Likely to have Heart Disease" if result == 1 else "🎉 Not likely to have Heart Disease"
-        #     st.markdown(
-        #         f"<div class='result-box {color_class}'>"
-        #         f"<h2>{msg}</h2>"
-        #         f"<p>Probability: {prob:.2f}%</p>"
-        #         f"<p style='color:grey;'>Model Accuracy: {acc * 100:.1f}% | F1 Score: {f1:.2f}</p>"
-        #         f"</div>",
-        #         unsafe_allow_html=True
-        #     )
+    # ===== Lung Disease Prediction =====
+    with st.expander("🫁 Lung Disease Prediction"):
+        st.info("🚧 Coming Soon — This feature will be available in future updates.")
+
+    # ===== Mental Health Assessment =====
+    with st.expander("🧠 Mental Health Assessment"):
+        st.info("🚧 Coming Soon — This feature will be available in future updates.")
 
 # ===== Footer =====
 st.markdown("""
