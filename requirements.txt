@@ -3,4 +3,5 @@ numpy
 scikit-learn
 pyttsx3
 google-generativeai
+from google.generativeai import genai
 python-dotenv
